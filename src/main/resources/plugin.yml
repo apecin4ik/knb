@@ -1,0 +1,17 @@
+name: KNB
+version: ${project.version}
+main: me.knb.Knb
+api-version: "1.16"
+depend: [Vault]
+description: Камень, ножницы, бумага на деньги
+commands:
+  knb:
+    description: Открыть меню Камень-Ножницы-Бумага
+    usage: /knb [reload]
+permissions:
+  knb.use:
+    description: Играть в КНБ
+    default: true
+  knb.admin:
+    description: Перезагрузка конфига
+    default: op
